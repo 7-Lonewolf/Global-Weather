@@ -19,7 +19,7 @@ form.addEventListener('submit', event =>{
 
 async function getWeatherInfo(cityName) { // To enable async execution of code
     try {
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=9d589e03d1934c1692c160510231212&q=${cityName}&aqi=no`);
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=9d589e03d1934c1692c160510231212&q=${cityName}&aqi=no`);
         const weatherData = await response.json();
         console.log(weatherData);
 
